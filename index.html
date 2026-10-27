@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tropical AEC | Building Science, Architecture & Construction</title>
+  <link rel="canonical" href="https://tropicalaec.com/">
+  <meta name="description" content="Independent building science publication analyzing marine salt-air corrosion mitigation, Category 5 cyclonic wind tie-downs, resilient island solar microgrids, and passive open-air tropical ventilation.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Newsreader"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            // 60% Dominant: Deep Navy (#161F83)
+            navy: {
+              DEFAULT: '#161F83',
+              dark: '#0e1458',
+              deep: '#0a0e3f',
+              text: '#111863',
+              50: '#eef2ff',
+            },
+            // 30% Secondary: Steel Blue (#3274AE)
+            steel: {
+              DEFAULT: '#3274AE',
+              dark: '#225582',
+              light: '#5393cd',
+              100: '#e8f2fa',
+              50: '#f4f8fc',
+              border: '#d0e1f0',
+            },
+            // 10% Accent: Crimson Red (#C42927)
+            crimson: {
+              DEFAULT: '#C42927',
+              hover: '#a8211f',
+              light: '#fdf2f2',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* guidetouxr clean category boxes */
+    .category-box {
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 160px;
+      text-decoration: none;
+    }
+    .category-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px -6px rgba(22, 31, 131, 0.12);
+      border-color: #3274AE !important;
+    }
+  </style>
+</head>
+<body class="bg-[#FBFBFC] text-slate-800 font-sans antialiased selection:bg-navy selection:text-white min-h-screen flex flex-col">
+
+    <!-- Top Network Bar (AEC Media Network) -->
+  <div class="bg-slate-900 text-slate-300 text-[11px] font-mono border-b border-slate-800 py-1.5 px-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-slate-400 uppercase tracking-widest font-semibold">AEC Media Network:</span>
+        <div class="flex items-center gap-3 overflow-x-auto">
+          <a href="https://tropicalaec.com" class="hover:text-white transition">Midwest</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://northwestaec.com" class="hover:text-white transition">Northwest</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://southwestaec.com" class="hover:text-white transition">Southwest</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://southeastaec.com" class="hover:text-white transition">Southeast</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://northeastaec.com" class="hover:text-white transition">Northeast</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://tropicalaec.com" class="text-white font-bold border-b border-crimson pb-0.5">Tropical</a>
+        </div>
+      </div>
+      <span class="hidden sm:inline text-slate-400 text-[10px] uppercase tracking-wider">Independent Building Science</span>
+    </div>
+  </div>
+
+<!-- Header (Clean & Spacious) -->
+  <header class="border-b border-slate-200 bg-white/95 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-3.5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-lg bg-navy flex items-center justify-center font-bold text-white text-base tracking-wider font-mono shadow-sm group-hover:bg-navy-dark transition">
+            <span>T</span><span class="text-crimson">R</span>
+          </div>
+          <div>
+            <div class="text-xl font-bold tracking-tight text-navy font-serif leading-none">
+              Tropical<span class="text-steel">AEC</span><span class="text-xs text-slate-400 font-sans font-normal ml-0.5">™</span>
+            </div>
+            <p class="text-[10px] font-mono text-slate-500 uppercase tracking-widest mt-1">Midwest Building Science</p>
+          </div>
+        </a>
+      </div>
+
+      <nav class="flex items-center gap-6 sm:gap-8 text-xs font-mono uppercase tracking-wider text-slate-600">
+        <a href="browse.html?cat=all" class="hover:text-navy transition font-medium">Browse All Articles</a>
+        <a href="browse.html?cat=manufacturers" class="hover:text-navy transition font-medium">Manufacturer Directory</a>
+        <a href="about.html" class="hover:text-navy transition font-medium">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section (guidetouxr style: Title + 1-sentence intro) -->
+  <section class="pt-16 pb-12 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+    <h1 class="text-4xl sm:text-5xl font-bold text-navy font-serif tracking-tight leading-tight">
+      TRAEC
+    </h1>
+    <p class="text-sm font-mono uppercase tracking-widest text-steel mt-2 font-bold">
+      Midwest Architecture, Engineering & Construction
+    </p>
+    <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto font-sans">
+      A curated collection of building science specifications, envelope assemblies, and trade engineering for Climate Zone 1 Very Hot-Humid & Island Climates.</p>
+  </section>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 pb-20 flex-1 w-full space-y-8">
+    
+    <!-- SEARCH BAR (Positioned above everything in the grid) -->
+    <div class="max-w-2xl mx-auto pt-2 pb-1">
+      <form action="browse.html" method="GET" class="relative flex items-center">
+        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </div>
+        <input 
+          type="text" 
+          name="q" 
+          placeholder="Search specifications, assemblies, products, ASTM tests..." 
+          class="w-full pl-11 pr-28 py-3.5 rounded-2xl bg-white border-2 border-slate-200 text-sm text-navy placeholder-slate-400 focus:outline-none focus:border-steel shadow-xs transition"
+        >
+        <button 
+          type="submit" 
+          class="absolute right-2 px-4 py-2 rounded-xl bg-navy hover:bg-navy-dark text-white text-xs font-mono font-semibold transition"
+        >
+          Search &rarr;
+        </button>
+      </form>
+    </div>
+
+    <!-- TOP ROW: DIRECTORIES (3 CARDS) -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      
+      <!-- Top Box 1: Article Directory -->
+      <a href="browse.html?cat=all" class="category-box p-6 rounded-2xl bg-navy text-white shadow-sm border-2 border-navy hover:border-steel">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-steel-100 font-bold tracking-wider">DIRECTORY</span>
+          <span class="w-2.5 h-2.5 rounded-full bg-crimson animate-pulse"></span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-white font-serif leading-snug">Article Directory</h3>
+          <p class="text-xs text-steel-100 mt-1 font-sans">Browse the complete regional library &rarr;</p>
+        </div>
+      </a>
+
+      <!-- Top Box 2: Manufacturer Directory -->
+      <a href="browse.html?cat=manufacturers" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs hover:border-steel">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-steel font-bold tracking-wider">DIRECTORY</span>
+          <span class="text-xs font-mono text-crimson font-bold">ASTM Specs</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">Manufacturer Directory</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">Verified ASTM specifications & trade cut sheets &rarr;</p>
+        </div>
+      </a>
+
+      <!-- Top Box 3: Product Directory -->
+      <a href="browse.html?cat=products" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs hover:border-steel">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-steel font-bold tracking-wider">DIRECTORY</span>
+          <span class="text-xs font-mono text-slate-400">Products</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">Product Directory</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">Curated assemblies, R-values & testing data &rarr;</p>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- 3x3 CATEGORY GRID (Exact User Specified Order) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      
+      <!-- ROW 1, COL 1: Roofing -->
+      <a href="browse.html?cat=roofing" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-steel font-bold">ROOF</span>
+          <span class="text-xs font-mono text-slate-400">Attics</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">Roofing</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">Cold roofs, ventilation & ice dam prevention</p>
+        </div>
+      </a>
+
+      <!-- ROW 1, COL 2: Rural Development -->
+      <a href="browse.html?cat=rural-development" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-steel font-bold">RURAL</span>
+          <span class="text-xs font-mono text-slate-400">Acreage</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">Rural Development</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">Off-grid systems, expansive lawncare & bug prevention</p>
+        </div>
+      </a>
+
+      <!-- ROW 1, COL 3: Urban Development -->
+      <a href="browse.html?cat=urban-development" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-crimson font-bold">CITIES</span>
+          <span class="text-xs font-mono text-slate-400">Urban Dev</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">Urban Development</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">100-year brick masonry & balloon framing</p>
+        </div>
+      </a>
+
+      <!-- ROW 2, COL 1: Envelope -->
+      <a href="browse.html?cat=envelopes" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-steel font-bold">ENVELOPE</span>
+          <span class="text-xs font-mono text-slate-400">Offsite</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">Envelope</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">SIPs, ICF & panelized assemblies</p>
+        </div>
+      </a>
+
+      <!-- ROW 2, COL 2: Air Barrier -->
+      <a href="browse.html?cat=air-barriers" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-steel font-bold">AIR</span>
+          <span class="text-xs font-mono text-slate-400">Airtightness</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">Air Barrier</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">Blower door testing & smart vapor retarders</p>
+        </div>
+      </a>
+
+      <!-- ROW 2, COL 3: Water Barrier -->
+      <a href="browse.html?cat=water-barriers" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-steel font-bold">WATER</span>
+          <span class="text-xs font-mono text-slate-400">Moisture</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">Water Barrier</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">WRBs, self-adhered membranes & slab poly</p>
+        </div>
+      </a>
+
+      <!-- ROW 3, COL 1: HVAC -->
+      <a href="browse.html?cat=hvac" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-steel font-bold">MEP</span>
+          <span class="text-xs font-mono text-slate-400">Mechanicals</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">HVAC</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">Inverter heat pumps (-15°F) & ERVs</p>
+        </div>
+      </a>
+
+      <!-- ROW 3, COL 2: Efficient Systems -->
+      <a href="browse.html?cat=efficient-systems" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-steel font-bold">EFFICIENCY</span>
+          <span class="text-xs font-mono text-slate-400">R-Value</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">Efficient Systems</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">Continuous exterior insulation & tariff analysis</p>
+        </div>
+      </a>
+
+      <!-- ROW 3, COL 3: Go Green -->
+      <a href="browse.html?cat=go-green" class="category-box p-6 rounded-2xl bg-white border-2 border-steel-border shadow-xs">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-emerald-600 font-bold">SUSTAINABLE</span>
+          <span class="text-xs font-mono text-slate-400">Decarbonize</span>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-navy font-serif leading-snug">Go Green</h3>
+          <p class="text-xs text-slate-500 mt-1 font-sans">Embodied carbon, stone wool & net-zero assemblies</p>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Suggest a Resource & Newsletter (guidetouxr exact bottom layout) -->
+  <section class="border-t border-slate-200 bg-white py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h3 class="text-2xl font-bold text-navy font-serif">Something missing or have a material to spec?</h3>
+      <p class="text-slate-600 text-sm mt-2 font-sans">Help make Tropical AEC the definitive field manual for Midwest building science.</p>
+      
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+        <a href="mailto:contact@tropicalaec.com" class="px-5 py-2.5 rounded-xl bg-navy text-white text-xs font-mono font-semibold hover:bg-navy-dark transition shadow-sm">
+          Suggest a Topic or Manufacturer
+        </a>
+        <a href="article-template.html" class="px-5 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-700 text-xs font-mono font-semibold hover:border-steel transition">
+          View Authoring Template &rarr;
+        </a>
+      </div>
+
+      <!-- Simple Email Form -->
+      <div class="mt-12 p-6 rounded-2xl bg-steel-50 border border-steel-border max-w-md mx-auto">
+        <h4 class="text-sm font-bold text-navy font-mono">Want to know when we add new specs?</h4>
+        <form class="mt-3 flex gap-2" onsubmit="event.preventDefault(); alert('Subscribed to Tropical AEC specification updates!');">
+          <input type="email" placeholder="Enter your email" class="flex-1 bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-navy focus:outline-none focus:border-steel">
+          <button type="submit" class="bg-crimson hover:bg-crimson-hover text-white text-xs font-mono px-4 py-2 rounded-lg font-semibold transition">
+            Notify Me
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white py-8 text-xs text-slate-500 font-mono mt-auto">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3 flex-wrap">
+        <a href="about.html" class="hover:text-navy">About</a>
+        <span>&bull;</span>
+        <a href="privacy.html" class="hover:text-navy">Privacy Policy</a>
+        <span>&bull;</span>
+        <a href="terms.html" class="hover:text-navy">Terms of Service</a>
+        <span>&bull;</span>
+        <a href="disclosure.html" class="hover:text-navy">Affiliate Disclosure</a>
+      </div>
+      <div>&copy; 2026 Tropical AEC™ &bull; Independent Building Science Publication. All rights reserved.</div>
+    </div>
+  </footer>
+
+</body>
+</html>

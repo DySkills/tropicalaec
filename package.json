@@ -1,0 +1,11 @@
+{
+  "name": "tropicalaec",
+  "version": "1.0.0",
+  "description": "Tropical AEC - Building Science, Architecture & Construction",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "Dylen Skillings",
+  "license": "ISC"
+}

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Specifications & Guides | Tropical AEC</title>
+  <link rel="canonical" href="https://tropicalaec.com/browse.html">
+  <meta name="description" content="Browse the complete catalog of Tropical AEC building science monographs, envelope retrofits, moisture remediation guides, and construction specifications.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Newsreader"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            navy: {
+              DEFAULT: '#161F83',
+              dark: '#0e1458',
+              deep: '#0a0e3f',
+              text: '#111863',
+              50: '#eef2ff',
+            },
+            steel: {
+              DEFAULT: '#3274AE',
+              dark: '#225582',
+              100: '#e8f2fa',
+              50: '#f4f8fc',
+              border: '#d0e1f0',
+            },
+            crimson: {
+              DEFAULT: '#C42927',
+              hover: '#a8211f',
+              light: '#fdf2f2',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#FBFBFC] text-slate-800 font-sans antialiased selection:bg-navy selection:text-white min-h-screen flex flex-col">
+
+    <!-- Top Network Bar (AEC Media Network) -->
+  <div class="bg-slate-900 text-slate-300 text-[11px] font-mono border-b border-slate-800 py-1.5 px-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-slate-400 uppercase tracking-widest font-semibold">AEC Media Network:</span>
+        <div class="flex items-center gap-3 overflow-x-auto">
+          <a href="https://tropicalaec.com" class="hover:text-white transition">Midwest</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://northwestaec.com" class="hover:text-white transition">Northwest</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://southwestaec.com" class="hover:text-white transition">Southwest</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://southeastaec.com" class="hover:text-white transition">Southeast</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://northeastaec.com" class="hover:text-white transition">Northeast</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://tropicalaec.com" class="text-white font-bold border-b border-crimson pb-0.5">Tropical</a>
+        </div>
+      </div>
+      <span class="hidden sm:inline text-slate-400 text-[10px] uppercase tracking-wider">Independent Building Science</span>
+    </div>
+  </div>
+
+<!-- Header -->
+  <header class="border-b border-slate-200 bg-white/95 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-18 py-3.5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-lg bg-navy flex items-center justify-center font-bold text-white text-base tracking-wider font-mono shadow-sm group-hover:bg-navy-dark transition">
+            <span>T</span><span class="text-crimson">R</span>
+          </div>
+          <div>
+            <div class="text-xl font-bold tracking-tight text-navy font-serif leading-none">
+              Tropical<span class="text-steel">AEC</span><span class="text-xs text-slate-400 font-sans font-normal ml-0.5">™</span>
+            </div>
+            <p class="text-[10px] font-mono text-slate-500 uppercase tracking-widest mt-1">Midwest Building Science</p>
+          </div>
+        </a>
+      </div>
+
+      <nav class="flex items-center gap-6 sm:gap-8 text-xs font-mono uppercase tracking-wider text-slate-600">
+        <a href="browse.html?cat=all" class="text-navy font-bold border-b-2 border-crimson pb-0.5">Browse All Articles</a>
+        <a href="browse.html?cat=manufacturers" class="hover:text-navy transition font-medium">Manufacturer Directory</a>
+        <a href="about.html" class="hover:text-navy transition font-medium">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Directory Container -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 flex-1 w-full">
+    
+    <!-- Top Breadcrumb -->
+    <div class="mb-4">
+      <a href="index.html" class="text-xs font-mono text-steel hover:text-navy transition flex items-center gap-1 font-semibold">
+        &larr; Back to All Categories
+      </a>
+    </div>
+
+    <!-- Active Heading & Description -->
+    <div class="border-b border-slate-200 pb-6 mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-navy font-serif tracking-tight" id="page-title">
+        All Guides & Specifications
+      </h1>
+      <p class="text-slate-600 text-sm mt-2 font-sans max-w-2xl" id="page-desc">
+        Curated engineering specifications, building envelope assemblies, and practical trade teardowns across the Midwest.
+      </p>
+    </div>
+
+    <!-- REGIONAL FILTER & SEARCH BAR (Alphabetized Cities & States) -->
+    <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm mb-8 space-y-3">
+      <div class="text-[11px] font-mono uppercase tracking-wider text-slate-400 font-bold">
+        Filter by Region, State & City:
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <!-- 1. City / Metro Filter (Alphabetized) -->
+        <div>
+          <label class="block text-[10px] font-mono uppercase text-slate-500 mb-1">City / Metro (A-Z)</label>
+          <select id="filter-city" onchange="applyFilters()" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-mono text-slate-700 focus:outline-none focus:border-steel focus:bg-white transition">
+            <option value="all">All Midwest Metros</option>
+            <option value="Chicago">Chicago, IL</option>
+            <option value="Cincinnati">Cincinnati, OH</option>
+            <option value="Cleveland">Cleveland, OH</option>
+            <option value="Columbus">Columbus, OH</option>
+            <option value="Des Moines">Des Moines, IA</option>
+            <option value="Detroit">Detroit, MI</option>
+            <option value="Fargo">Fargo, ND</option>
+            <option value="Indianapolis">Indianapolis, IN</option>
+            <option value="Kansas City">Kansas City, MO/KS</option>
+            <option value="Milwaukee">Milwaukee, WI</option>
+            <option value="Minneapolis">Minneapolis, MN</option>
+            <option value="Omaha">Omaha, NE</option>
+            <option value="Rapid City">Rapid City, SD</option>
+            <option value="Sioux Falls">Sioux Falls, SD</option>
+            <option value="St. Louis">St. Louis, MO</option>
+          </select>
+        </div>
+
+        <!-- 2. State Filter (Alphabetized) -->
+        <div>
+          <label class="block text-[10px] font-mono uppercase text-slate-500 mb-1">State (A-Z)</label>
+          <select id="filter-state" onchange="applyFilters()" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-mono text-slate-700 focus:outline-none focus:border-steel focus:bg-white transition">
+            <option value="all">All Midwest States</option>
+            <option value="IL">Illinois (IL)</option>
+            <option value="IN">Indiana (IN)</option>
+            <option value="IA">Iowa (IA)</option>
+            <option value="KS">Kansas (KS)</option>
+            <option value="MI">Michigan (MI)</option>
+            <option value="MN">Minnesota (MN)</option>
+            <option value="MO">Missouri (MO)</option>
+            <option value="NE">Nebraska (NE)</option>
+            <option value="ND">North Dakota (ND)</option>
+            <option value="OH">Ohio (OH)</option>
+            <option value="SD">South Dakota (SD)</option>
+            <option value="WI">Wisconsin (WI)</option>
+          </select>
+        </div>
+
+        <!-- 3. Category Filter -->
+        <div>
+          <label class="block text-[10px] font-mono uppercase text-slate-500 mb-1">Category</label>
+          <select id="filter-category" onchange="applyFilters()" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-mono text-slate-700 focus:outline-none focus:border-steel focus:bg-white transition">
+            <option value="all">All Guides & Specifications</option>
+            <option value="roofing">Roofing</option>
+            <option value="rural-development">Rural Development</option>
+            <option value="urban-development">Urban Development</option>
+            <option value="envelopes">Envelopes</option>
+            <option value="air-barriers">Air Barriers</option>
+            <option value="water-barriers">Water Barriers</option>
+            <option value="hvac">HVAC</option>
+            <option value="efficient-systems">Efficient Systems</option>
+            <option value="go-green">Go Green</option>
+            <option value="manufacturers">Manufacturer Directory</option>
+            <option value="products">Product Directory</option>
+          </select>
+        </div>
+
+        <!-- 4. Text Search -->
+        <div>
+          <label class="block text-[10px] font-mono uppercase text-slate-500 mb-1">Keyword Search</label>
+          <input 
+            type="text" 
+            id="filter-search" 
+            oninput="applyFilters()"
+            placeholder="e.g. vapor barrier, heat pump, brick..." 
+            class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs text-navy placeholder-slate-400 focus:outline-none focus:border-steel focus:bg-white transition"
+          >
+        </div>
+      </div>
+
+      <!-- Filter Status & Reset -->
+      <div class="flex items-center justify-between pt-2 border-t border-slate-100 text-xs font-mono">
+        <span class="text-slate-500" id="results-count-text">Loading...</span>
+        <button onclick="resetAllFilters()" id="reset-filter-btn" class="hidden text-crimson hover:underline font-bold">
+          &times; Reset All Filters
+        </button>
+      </div>
+    </div>
+
+    <!-- MODULAR DATABASE CARDS GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="results-grid">
+      <!-- Injected from data.js -->
+    </div>
+  </main>
+
+  <!-- Suggest a Topic & Newsletter (guidetouxr style) -->
+  <section class="border-t border-slate-200 bg-white py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h3 class="text-2xl font-bold text-navy font-serif">Something missing or have a material to spec?</h3>
+      <p class="text-slate-600 text-sm mt-2 font-sans">Help make Tropical AEC the definitive field manual for Midwest building science.</p>
+      
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+        <a href="mailto:contact@tropicalaec.com" class="px-5 py-2.5 rounded-xl bg-navy text-white text-xs font-mono font-semibold hover:bg-navy-dark transition shadow-sm">
+          Suggest a Topic or Manufacturer
+        </a>
+        <a href="article-template.html" class="px-5 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-700 text-xs font-mono font-semibold hover:border-steel transition">
+          View Authoring Template &rarr;
+        </a>
+      </div>
+
+      <!-- Simple Email Form -->
+      <div class="mt-12 p-6 rounded-2xl bg-steel-50 border border-steel-border max-w-md mx-auto">
+        <h4 class="text-sm font-bold text-navy font-mono">Want to know when we add new specs?</h4>
+        <form class="mt-3 flex gap-2" onsubmit="event.preventDefault(); alert('Subscribed to Tropical AEC specification updates!');">
+          <input type="email" placeholder="Enter your email" class="flex-1 bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs text-navy focus:outline-none focus:border-steel">
+          <button type="submit" class="bg-crimson hover:bg-crimson-hover text-white text-xs font-mono px-4 py-2 rounded-lg font-semibold transition">
+            Notify Me
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white py-8 text-xs text-slate-500 font-mono mt-auto">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3 flex-wrap">
+        <a href="about.html" class="hover:text-navy">About</a>
+        <span>&bull;</span>
+        <a href="privacy.html" class="hover:text-navy">Privacy Policy</a>
+        <span>&bull;</span>
+        <a href="terms.html" class="hover:text-navy">Terms of Service</a>
+        <span>&bull;</span>
+        <a href="disclosure.html" class="hover:text-navy">Affiliate Disclosure</a>
+      </div>
+      <div>&copy; 2026 Tropical AEC™ &bull; Independent Building Science Publication. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Include data.js -->
+  <script src="data.js?v=20261019"></script>
+
+  <!-- Filter & Render Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const catParam = params.get('cat');
+      const cityParam = params.get('city');
+      const qParam = params.get('q') || params.get('search');
+
+      const aliasMap = {
+        'rural-dev': 'rural-development',
+        'urban-dev': 'urban-development',
+        'urban-remodels': 'urban-development',
+        'prefab': 'envelopes',
+        'heating-cooling': 'hvac',
+        'energy-efficiency': 'efficient-systems',
+        'efficiency': 'efficient-systems',
+        'materials': 'products'
+      };
+
+      if (catParam && catParam !== 'all') {
+        const canonicalCat = aliasMap[catParam] || catParam;
+        const catSelect = document.getElementById('filter-category');
+        if ([...catSelect.options].some(o => o.value === canonicalCat)) {
+          catSelect.value = canonicalCat;
+        }
+      }
+      if (cityParam) {
+        document.getElementById('filter-city').value = cityParam;
+      }
+      if (qParam) {
+        document.getElementById('filter-search').value = qParam;
+      }
+
+      applyFilters();
+    });
+
+    function applyFilters() {
+      const selectedCategory = document.getElementById('filter-category').value;
+      const selectedCity = document.getElementById('filter-city').value;
+      const selectedState = document.getElementById('filter-state').value;
+      const searchQuery = document.getElementById('filter-search').value.toLowerCase().trim();
+
+      const pageTitle = document.getElementById('page-title');
+      const pageDesc = document.getElementById('page-desc');
+      const resetBtn = document.getElementById('reset-filter-btn');
+      const countText = document.getElementById('results-count-text');
+      const grid = document.getElementById('results-grid');
+
+      // Update page titles
+      if (selectedCategory === 'all') {
+        pageTitle.textContent = 'All Guides & Specifications';
+        pageDesc.textContent = 'Curated engineering specifications, building envelope assemblies, and practical trade teardowns across the Midwest.';
+      } else {
+        const catName = getCategoryName(selectedCategory);
+        pageTitle.textContent = catName;
+        pageDesc.textContent = `Technical specifications, assemblies, and regional standards for ${catName.toLowerCase()}.`;
+      }
+
+      // Show/Hide Reset Button
+      if (selectedCategory !== 'all' || selectedCity !== 'all' || selectedState !== 'all' || searchQuery) {
+        resetBtn.classList.remove('hidden');
+      } else {
+        resetBtn.classList.add('hidden');
+      }
+
+      // Handle Manufacturer Directory state
+      if (selectedCategory === 'manufacturers') {
+        countText.textContent = `Manufacturer Directory Submissions`;
+        grid.innerHTML = `
+          <div class="col-span-full p-10 bg-white rounded-2xl border-2 border-steel-border text-center shadow-xs">
+            <span class="text-xs font-mono uppercase tracking-widest text-crimson font-bold">Submissions Open</span>
+            <h3 class="text-2xl font-bold text-navy font-serif mt-2">Material Manufacturers Directory</h3>
+            <p class="text-slate-600 text-sm max-w-xl mx-auto mt-2 font-sans leading-relaxed">
+              Are you a building product manufacturer? Publish your certified ASTM testing reports, CAD details, and technical cut sheets directly to Midwest architects, builders, and property owners.
+            </p>
+            <div class="mt-6 flex justify-center gap-3">
+              <a href="mailto:contact@tropicalaec.com" class="px-5 py-2.5 rounded-xl bg-navy text-white text-xs font-mono font-semibold hover:bg-navy-dark transition shadow-sm">
+                Submit Product for Specification Review &rarr;
+              </a>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      // Handle Product Directory state
+      if (selectedCategory === 'products') {
+        countText.textContent = `Product & Material Directory`;
+        const productSpecs = miaecData.filter(item => 
+          item.catSlug === 'efficient-systems' || 
+          item.catSlug === 'go-green' || 
+          item.title.toLowerCase().includes('foam') || 
+          item.title.toLowerCase().includes('rockwool') || 
+          item.title.toLowerCase().includes('insulation') || 
+          item.title.toLowerCase().includes('smart vapor')
+        );
+
+        grid.innerHTML = `
+          <div class="col-span-full p-8 bg-white rounded-2xl border border-slate-200 mb-2">
+            <span class="text-xs font-mono uppercase tracking-widest text-steel font-bold">Product Standards & Testing</span>
+            <h2 class="text-2xl font-bold text-navy font-serif mt-1">Independent Building Material Specifications</h2>
+            <p class="text-slate-600 text-sm mt-2 max-w-2xl font-sans">
+              Peer-reviewed laboratory testing data, ASTM thermal conductivity, vapor permeance curves, and dimensional stability metrics for Climate Zone 1 Very Hot-Humid & Island Climates.
+            </p>
+          </div>
+        ` + productSpecs.map(item => `
+          <div class="bg-white rounded-2xl border border-slate-200 hover:border-steel p-6 flex flex-col justify-between shadow-xs transition hover:shadow-md">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-steel-50 text-steel-dark border border-steel-border font-semibold">
+                  ${item.category}
+                </span>
+                <span class="text-[10px] font-mono text-slate-400">
+                  Product Spec
+                </span>
+              </div>
+              <h3 class="text-lg font-bold text-navy font-serif leading-snug">
+                <a href="${item.url}" class="hover:text-steel transition">${item.title}</a>
+              </h3>
+              <p class="text-slate-600 text-xs mt-2.5 leading-relaxed font-sans">
+                ${item.summary}
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-mono">
+              <span class="text-[11px] text-slate-500 truncate max-w-[65%]" title="${item.codeTag}">
+                &bull; ${item.codeTag}
+              </span>
+              <a href="${item.url}" class="text-crimson hover:text-crimson-hover font-bold shrink-0">
+                View Spec &rarr;
+              </a>
+            </div>
+          </div>
+        `).join('');
+        return;
+      }
+
+      // Filter Data
+      const filtered = miaecData.filter(item => {
+        const matchCategory = (selectedCategory === 'all') || (item.catSlug === selectedCategory);
+
+        let matchCity = true;
+        if (selectedCity !== 'all') {
+          matchCity = item.cities.includes(selectedCity);
+        }
+
+        let matchState = true;
+        if (selectedState !== 'all') {
+          matchState = item.states.includes(selectedState);
+        }
+
+        let matchSearch = true;
+        if (searchQuery) {
+          const haystack = (item.title + ' ' + item.summary + ' ' + item.category + ' ' + item.codeTag + ' ' + item.cities.join(' ')).toLowerCase();
+          matchSearch = haystack.includes(searchQuery);
+        }
+
+        return matchCategory && matchCity && matchState && matchSearch;
+      });
+
+      countText.textContent = `Showing ${filtered.length} technical specifications`;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full p-12 text-center bg-white rounded-2xl border border-slate-200">
+            <div class="text-sm font-mono text-slate-500">No matching specifications found for your selected filters.</div>
+            <button onclick="resetAllFilters()" class="mt-3 text-xs font-mono text-crimson font-bold underline">
+              Reset all filters to view full directory &rarr;
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(item => `
+        <div class="bg-white rounded-2xl border border-slate-200 hover:border-steel p-6 flex flex-col justify-between shadow-xs transition hover:shadow-md">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-steel-50 text-steel-dark border border-steel-border font-semibold">
+                ${item.category}
+              </span>
+              <span class="text-[10px] font-mono text-slate-400">
+                ${item.type}
+              </span>
+            </div>
+
+            <h3 class="text-lg font-bold text-navy font-serif leading-snug">
+              <a href="${item.url}" class="hover:text-steel transition">${item.title}</a>
+            </h3>
+
+            <p class="text-slate-600 text-xs mt-2.5 leading-relaxed font-sans">
+              ${item.summary}
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-mono">
+            <span class="text-[11px] text-slate-500 truncate max-w-[65%]" title="${item.codeTag}">
+              &bull; ${item.codeTag}
+            </span>
+            <a href="${item.url}" class="text-crimson hover:text-crimson-hover font-bold shrink-0">
+              Read Spec &rarr;
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function resetAllFilters() {
+      document.getElementById('filter-category').value = 'all';
+      document.getElementById('filter-city').value = 'all';
+      document.getElementById('filter-state').value = 'all';
+      document.getElementById('filter-search').value = '';
+      applyFilters();
+    }
+
+    function getCategoryName(slug) {
+      const map = {
+        'roofing': 'Roofing',
+        'rural-development': 'Rural Development',
+        'rural-dev': 'Rural Development',
+        'urban-development': 'Urban Development',
+        'urban-dev': 'Urban Development',
+        'urban-remodels': 'Urban Development',
+        'envelopes': 'Envelopes',
+        'prefab': 'Envelopes',
+        'air-barriers': 'Air Barriers',
+        'water-barriers': 'Water Barriers',
+        'hvac': 'HVAC',
+        'heating-cooling': 'HVAC',
+        'efficient-systems': 'Efficient Systems',
+        'energy-efficiency': 'Efficient Systems',
+        'efficiency': 'Efficient Systems',
+        'go-green': 'Go Green',
+        'manufacturers': 'Material Manufacturers Directory',
+        'products': 'Product Directory'
+      };
+      return map[slug] || slug;
+    }
+  </script>
+</body>
+</html>

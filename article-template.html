@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Article Title] | TRAEC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            navy: {
+              950: '#080c30',
+              900: '#0d1449',
+              850: '#111a62',
+              800: '#161F83',
+              700: '#1e2ba3',
+            },
+            steel: {
+              900: '#193a57',
+              800: '#24537c',
+              700: '#2b6596',
+              DEFAULT: '#3274AE',
+              400: '#4a8bc4',
+              300: '#6ea3d3',
+              200: '#9ec1e3',
+            },
+            crimson: {
+              DEFAULT: '#C42927',
+              hover: '#a8211f',
+              light: '#e04240',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-navy-950 text-slate-100 font-sans antialiased selection:bg-crimson selection:text-white min-h-screen">
+
+    <!-- Top Network Bar (AEC Media Network) -->
+  <div class="bg-slate-900 text-slate-300 text-[11px] font-mono border-b border-slate-800 py-1.5 px-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-slate-400 uppercase tracking-widest font-semibold">AEC Media Network:</span>
+        <div class="flex items-center gap-3 overflow-x-auto">
+          <a href="https://tropicalaec.com" class="hover:text-white transition">Midwest</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://northwestaec.com" class="hover:text-white transition">Northwest</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://southwestaec.com" class="hover:text-white transition">Southwest</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://southeastaec.com" class="hover:text-white transition">Southeast</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://northeastaec.com" class="hover:text-white transition">Northeast</a>
+          <span class="text-slate-700">•</span>
+          <a href="https://tropicalaec.com" class="text-white font-bold border-b border-crimson pb-0.5">Tropical</a>
+        </div>
+      </div>
+      <span class="hidden sm:inline text-slate-400 text-[10px] uppercase tracking-wider">Independent Building Science</span>
+    </div>
+  </div>
+
+<!-- Header -->
+  <header class="border-b border-steel-900 bg-navy-950/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold tracking-tight">
+        <div class="w-8 h-8 rounded-lg bg-navy-800 border border-steel-700 flex items-center justify-center text-xs font-mono">
+          <span>M</span><span class="text-crimson">I</span>
+        </div>
+        <span>MI<span class="text-steel-300">AEC</span></span>
+      </a>
+      <div class="flex items-center gap-4 text-xs font-mono text-steel-300">
+        <a href="index.html" class="hover:text-white">&larr; Back to Systems Hub</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Container -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <!-- Category & Metadata -->
+    <div class="flex items-center gap-2 text-xs font-mono text-crimson-light mb-4">
+      <span class="px-2.5 py-0.5 rounded bg-navy-900 border border-steel-700 text-steel-200">[Category / Topic]</span>
+      <span>&bull;</span>
+      <span>Climate Zone [4 / 5]</span>
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+      [Your Article Headline Here]
+    </h1>
+
+    <div class="mt-4 flex items-center gap-4 text-xs font-mono text-steel-400 border-b border-steel-900 pb-6">
+      <span>By [Your Name]</span>
+      <span>&bull;</span>
+      <span>[Date]</span>
+      <span>&bull;</span>
+      <span>[X] Min Read</span>
+    </div>
+
+    <!-- Article Body -->
+    <article class="mt-8 space-y-6 text-steel-100 text-base leading-relaxed">
+      <!-- Callout Summary Box -->
+      <div class="p-5 rounded-xl bg-navy-900 border-l-4 border-crimson text-sm text-steel-200">
+        <strong class="text-white">Executive Summary / Key Finding:</strong> 
+        [Write your core takeaway or thesis here.]
+      </div>
+
+      <h2 class="text-2xl font-bold text-white pt-4">1. [Section Heading]</h2>
+      <p>
+        [Write your technical explanation, field observations, or engineering specs here.]
+      </p>
+
+      <!-- Reusable Spec / Data Table Template -->
+      <div class="my-6 overflow-x-auto">
+        <table class="w-full text-left border-collapse border border-steel-800 text-sm font-mono">
+          <thead>
+            <tr class="bg-navy-900 text-steel-200">
+              <th class="p-3 border border-steel-800">Specification</th>
+              <th class="p-3 border border-steel-800">Standard / Baseline</th>
+              <th class="p-3 border border-steel-800 text-steel-300">High-Performance Spec</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3 border border-steel-800 text-steel-400">[Metric A]</td>
+              <td class="p-3 border border-steel-800">[Value]</td>
+              <td class="p-3 border border-steel-800 text-crimson-light font-bold">[Value]</td>
+            </tr>
+            <tr>
+              <td class="p-3 border border-steel-800 text-steel-400">[Metric B]</td>
+              <td class="p-3 border border-steel-800">[Value]</td>
+              <td class="p-3 border border-steel-800 text-crimson-light font-bold">[Value]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-bold text-white pt-4">2. [Section Heading]</h2>
+      <p>
+        [Continue your teardown, product comparison, or climate-specific details.]
+      </p>
+
+      <!-- Optional Lead Gen / Call to Action Hook -->
+      <div class="mt-12 bg-navy-900 border-2 border-steel-700 rounded-2xl p-6 sm:p-8">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <h3 class="text-lg font-bold text-white">Looking for Vetted Midwest Specialists?</h3>
+            <p class="text-xs text-steel-300 mt-1">Connect with building-science trained contractors in Climate Zone 1 Very Hot-Humid & Island Climates.</p>
+          </div>
+          <a href="index.html#quote-match" class="px-5 py-2.5 rounded-lg bg-crimson hover:bg-crimson-hover text-white font-semibold text-xs tracking-wide shrink-0 transition">
+            Request Vetted Quotes &rarr;
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
